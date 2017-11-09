@@ -18,6 +18,10 @@ export class QuoteComponent implements OnInit {
   onClick(){
     this.q_list.push(this.quotes);
     console.log(this.q_list);
+  //   this.q_list.sort(function(a, b) {
+  //     console.log('sorting...')
+  //     return b.rating - a.rating;
+  // });
     this.quotes = {
       quote : ' ',
       author : ' ',

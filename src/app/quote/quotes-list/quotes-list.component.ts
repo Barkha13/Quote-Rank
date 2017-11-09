@@ -12,14 +12,23 @@ export class QuotesListComponent implements OnInit {
 
   voteUp(index){
     this.quoteList[index].rating ++;
+    this.quoteRank();
   }
 
   voteDown(index){
     this.quoteList[index].rating --;
+    this.quoteRank();
   }
 
   delete(index){
     this.quoteList.splice(index,1);
+  }
+
+  quoteRank(){
+    this.quoteList.sort(function(a, b) {
+      console.log('sorting...')
+      return b.rating - a.rating;
+  });
   }
   constructor() { }
 

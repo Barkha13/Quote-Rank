@@ -2,7 +2,6 @@
     width: 500px;
     text-align: right;
     margin-bottom: 50px;
-    display: inline-block;
 }
 
 .quoteText{
@@ -17,6 +16,3 @@
     height: 25px;
 }
 
-.display{
-    display: inline-block;
-}
