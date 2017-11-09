@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Quotes List </h1>
+  <div [ngClass]="{'quote_list': true}" *ngFor="let q of quoteList; let i = index">
+    <div class="display">
+    <p>{{q.quote}}</p>
+    <p>-{{q.author}}</p>
+    </div>
+    <div class="display">
+    <h3>{{q.rating}}</h3>
+    </div>
+    <div class="display">
+    <button name="voteUp" class="green" (click)='voteUp(i)'>Vote Up</button><br>
+    <button name="voteDown" class="red" (click)='voteDown(i)'>Vote Down</button><br>
+    <button name="delete" class="black" (click)='delete(i)'>Delete</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quote List</title>
+</head>
+<body>
+  <h1>Add a Quote</h1>
+  <div class="wrapper">
+  <form>
+    <input 
+    type="textbox"
+    name="quote"
+    class="quoteText"
+    required
+    minlength="5"
+    maxlength="200"
+    [(ngModel)] = "quotes.quote"
+    #quote = 'ngModel'
+    />
+    <span style="color:red" *ngIf="!quote.valid">Quote is Required!</span>
+    <br><br>
+    Author
+    <input 
+    type="textbox"
+    name="author"
+    required
+    minlength="5"
+    maxlength="200"
+    [(ngModel)] = "quotes.author"
+    #author = 'ngModel'
+    />
+    <span style="color:red" *ngIf="!author.valid">Author is Required!</span>
+    <br><br>
+    <button name="add" class="btn" (click)="onClick()">Add Quote</button>
+  </form>
+  </div>
+  <app-quotes-list [quoteList] = 'q_list'></app-quotes-list>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.quote_list{
+    border: 1px solid black;
+    width: 700px;
+    height: 200px;
+    margin-bottom: 20px;
+    padding: 15px;
+    display: inline-block;
+}
+
+.green{
+    vertical-align: top;
+    margin-left: 600px;
+    background-color: green;
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px black;
+    margin-bottom: 3px;
+}
+.red{
+    margin-left: 600px;
+    background-color: red;
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px black;
+    margin-bottom: 3px;
+}
+.black{
+    margin-left: 600px;
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px black;
+}
+.display{
+    display: inline-block;
+}

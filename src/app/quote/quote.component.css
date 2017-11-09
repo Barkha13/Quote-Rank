@@ -1,0 +1,22 @@
+.wrapper{
+    width: 500px;
+    text-align: right;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+.quoteText{
+    height: 100px;
+    width: 300px;
+}
+
+.btn{
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+    width: 100px;
+    height: 25px;
+}
+
+.display{
+    display: inline-block;
+}
